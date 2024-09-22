@@ -1,0 +1,22 @@
+ABSTRACT: Power Grid failure detection based on sensing frequency and voltage variations
+The project is designed to develop a system to detect the synchronization failure of any external supply source to the power grid on sensing the abnormalities in frequency and voltage.
+There are several power generation units connected to the grid such as hydel, thermal, solar etc to supply power to the load. These generating units need to supply power according to the rules of the grid. These rules involve maintaining a voltage variation within limits and also the frequency. If any deviation from the acceptable limit of the grid it is mandatory that the same feeder should automatically get disconnected from the grid which by effect is termed as islanding. This prevents in large scale brown out or black out of the grid power. So it is preferable to have a system which can warn the grid in advance so that alternate arrangements are kept on standby to avoid complete grid failure.  
+This system is based on a microcontroller of pic family. The microcontroller monitors the under/over voltage being derived from a set of comparators. As the frequency of the mains supply cannot be changed, the project uses a variable frequency using opto coupler for changing the frequency, while a standard variac is used to vary the input voltage to test the functioning of the project. A lamp load (indicating a predictable blackout, brownout) being driven from the microcontroller in case of voltage/frequency going out of acceptable range
+Further the project can be enhanced by using power electronic devices to isolate the grid from the erring supply source by sensing cycle by cycle deviation for more sophisticated means of detection.
+
+The major building blocks of this project are:
+1. Micro controller Mother Board with regulated power supply.
+2. LCD 
+3. Buzzer
+4. OPTO coupler 
+5. POT.
+6. Transformer, 
+7. Relay, 
+8. Lamp.
+9. Led indicator
+10. Crystal oscillator 
+
+Software’s used:
+1. PIC-C compiler for Embedded C programming.
+2. PIC kit 2 programmer for dumping code into Micro controller.
+3.  Express SCH for Circuit design.
